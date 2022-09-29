@@ -5,4 +5,18 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
+}
+
+table {
+    border: 1px black solid;
+    margin: 15px;
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    padding: 1px 3px 1px 3px;
+}
+
+th, td {
+    border: 1px black solid;
 }

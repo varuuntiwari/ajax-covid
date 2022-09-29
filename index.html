@@ -3,9 +3,21 @@
     <head>
         <title>COVID Summary</title>
         <script src="main.js"></script>
+        <script type="text/javascript">
+            window.onload = getSummary()
+        </script>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <button onclick="getCountries()">Click me for summary</button>
+        <h2>COVID-19 Summary from John Hopkins University</h2>
+        <h4>Last updated at <span id="date"></span></h4>
+        <table>
+            <thead>
+                <th>Country</th>
+                <th>Total Confirmed</th>
+            </thead>
+            <tbody id="table-data">
+            </tbody>
+        </table>
     </body>
 </html>

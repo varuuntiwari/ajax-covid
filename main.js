@@ -5,7 +5,18 @@ function getSummary() {
         .then((res) => {
             return res.json();
         })
-        .then((data) => {
-            console.log(data);
-        })
+        .then((data) => getJSON(data))
+}
+
+function getJSON(json) {
+    const table = document.querySelector("#table-data")
+    document.querySelector('#date').innerText = json["Date"]
+    json["Countries"].forEach(e => {
+        table.innerHTML += `
+            <tr>
+                <td>${e["Country"]}</td>
+                <td>${e["TotalConfirmed"]}</td>
+            </tr>
+        `
+    });
 }
