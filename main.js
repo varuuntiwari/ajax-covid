@@ -16,6 +16,11 @@ function getJSON(json) {
             <tr>
                 <td>${e["Country"]}</td>
                 <td>${e["TotalConfirmed"]}</td>
+                <td>${e["NewConfirmed"]}</td>
+                <td>${e["NewDeaths"]}</td>
+                <td>${e["TotalDeaths"]}</td>
+                <td>${e["NewConfirmed"]}</td>
+                <td>${e["TotalRecovered"]}</td>
             </tr>
         `
     });
