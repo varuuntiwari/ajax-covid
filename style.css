@@ -20,3 +20,7 @@ table {
 th, td {
     border: 1px black solid;
 }
+
+a {
+    color: inherit;
+}
